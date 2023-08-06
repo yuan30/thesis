@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-    <title>論文題目</title>
+    <title>Real-timeOne-stageRegressionPoseReconstructionSystem</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.lp.css">
 	<link rel="stylesheet" type="text/css" href="css/landing-page.css">
@@ -61,14 +61,9 @@
             <div class="row">
                 <div class="col-lg-12" style="height:300px;">
                     <div class="intro-message" style="position: relative;padding-top: 0%;padding-bottom: 70%;">
-                        <h1>論文題目</h1>
-                        <ul class="list-inline intro-social-buttons">
-                            <li>
-                                <a href="demo.html" class="btn btn-default btn-lg"> 
-                                    <span class="network-name" style="font-weight: 900;">進入系統</span>
-                                </a>
-                            </li>
-                        </ul>
+                        <h1>即時多鏡頭卷積神經網路<br>動作捕捉系統</h1>
+                        <h2>Real-Time Multiple Cameras Convolutional Neural Network<br>Motion Capture System</h2>
+                        
                     </div>
                 </div>
             </div>
@@ -93,11 +88,14 @@
                         <img src="img/hu.svg" alt="" width="100">
                     </h2>
                     
-					<p class="lead">內文內文內文內文內文內文內文內文內文內文</p>
+					<p class="lead">本研究開發一套基於直播且容易使用的動作捕捉系統。系統內部採用卷積神經網路模型做姿態的預測，並即時的輸出人體追蹤的結果。
+                        對於現在這個網路發達的世界，只要擁有連網設備，如電腦、手機，就能從內建鏡頭透過直播的方式來和其他人互動。
+                        而在動作捕捉技術相對成熟的這個時候，相關產業也都受惠於只需要用簡易的設備就能捕捉動作。然而現行最準確的方案，依然是需要穿上具有光學標記點的緊身衣服。
+                        但是會有標記點脫落要重黏，及需要穿脫衣物的不便之處。故本論文旨在透過兩支一般的網路攝影機，進行無標記點的姿態偵測。最後利用 Unity 實現這一套可供虛擬主播實況的系統。</p>
                 </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                <div class="col-lg-7 col-sm-6">
 					<br><br><br>
-                    <img class="img-responsive" src="img/dog.png" alt="">
+                    <img style="max-width: 125%;" class="img-responsive" src="img/software_architecture.svg" alt="">
                 </div>
             </div>
 
@@ -116,13 +114,24 @@
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">引用文獻</h2>
-					<p class="lead">內文內文內文內文內文內文內文內文內文內文</p>
+					<p class="lead">
+                        Bazarevsky等人提出的 BlazePose 中探討了從影片或影像中姿態估計的挑戰，這在各個領域具有重要的應用。
+                        傳統的方法是為每個關節產生熱度圖，但這種方法的計算成本高，不適合在移動手機上進行實時推斷。
+                        他們提出了一種基於回歸的方法，使用編碼器-解碼器網絡架構來預測所有關節的熱度圖，然後使用另一個編碼器直接回歸到所有關節的坐標。
+                        他們的方法輕量化，可以在推斷過程中不使用熱度圖分支在移動手機上運行，同時仍然可以實現高品質的預測。
+                    </p>
                 </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6 text-center">
 					<br><br><br>
-                    <img class="img-responsive" src="img/ipad.png" alt="">
+                    <!-- Fig 3.6 -->
+                    <img class="img-responsive" src="img/mediapipe_2d_pose_offical.png" alt="">
+                    <a href="#blazepose">[1]</a>
+                    
                 </div>
             </div>
+
+            <br>
+            <a name="blazepose" href="https://arxiv.org/pdf/2006.10204.pdf">[1] V. Bazarevsky, I. Grishchenko, K. Raveendran, T. Zhu, F. Zhang, and M. Grundmann, “Blazepose: On-device real-time body pose tracking,” in CVPR Workshop on Computer Vision for Augmented and Virtual Reality, Seattle, WA,, June 2020</a>
 
         </div>
         <!-- /.container -->
@@ -138,12 +147,14 @@
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-					<h2 class="section-heading">示範</h2>
-					<p class="lead">內文內文內文內文內文內文內文內文內文內文</p>
+					<h2 class="section-heading">簡介影片</h2>
+					<p class="lead">本研究介紹影片，說明本研究目標，以及實驗結果。</p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
 					<br><br><br>
-                    <img class="img-responsive" src="img/phones.png" alt="">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OW4ggkb8TWg" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
 
